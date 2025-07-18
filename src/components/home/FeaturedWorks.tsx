@@ -6,7 +6,7 @@ import { localImages } from "@/utils/imageProvider";
 
 const FeaturedWorks = () => {
   return (
-    <div className="bg-white pb-60 pt-24">
+    <div className="bg-white py-24">
       <Container>
         <div className="flex justify-between items-end">
           <div>
