@@ -13,7 +13,7 @@ const Hero = () => {
         alt="hero_image"
       />
       <Container>
-        <div className=" relative flex items-center justify-between pb-12 z-8">
+        <div className=" relative flex items-end justify-between pb-12 z-8">
           <h1 className="text-7xl font-abzee w-4/12  text-white  font-medium leading-[70px]">
             DESIGNING SPACES WITH
           </h1>
