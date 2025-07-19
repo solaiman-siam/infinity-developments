@@ -5,7 +5,7 @@ import { localImages } from "@/utils/imageProvider";
 
 const InvestOppurtunities = () => {
   return (
-    <div className="py-24">
+    <div className="pt-24 pb-10">
       <Container>
         <div>
           <h3 className="text-5xl font-semibold pb-3">

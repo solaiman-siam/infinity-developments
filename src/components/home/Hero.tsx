@@ -1,15 +1,14 @@
-import { localImages } from "@/utils/imageProvider";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Container from "../shared/Container";
 import { MoveRight } from "lucide-react";
 
 
-const Hero = () => {
+const Hero = ({heroImage} : {heroImage: StaticImageData}) => {
   return (
     <div className="w-full relative flex  items-end h-screen">
       <Image
         className="absolute object-top z-2 top-0 left-0"
-        src={localImages.HeroImage}
+        src={heroImage}
         alt="hero_image"
       />
       <Container>
