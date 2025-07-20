@@ -15,6 +15,8 @@ import StatisticsVector from '@/assets/images/statisctics-vector.png'
 import OurProjects from '@/assets/images/our-projects.png'
 import Project1 from '@/assets/images/project1.png'
 import ProjectMap1 from '@/assets/images/project-map1.png'
+import FounderImage from '@/assets/images/founders.png'
+import ProjectDeatailsAbout from '@/assets/images/project-details-about.png'
 
 export const localImages = {
 InfinityDevelopmentsLogo,
@@ -31,6 +33,7 @@ Investment2,
 StatisticsVector,
 OurProjects,
 Project1,
-ProjectMap1
-
+ProjectMap1,
+FounderImage,
+ProjectDeatailsAbout
 }

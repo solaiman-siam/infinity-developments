@@ -1,31 +1,32 @@
 @import "tailwindcss";
 
-
-
 @theme inline {
   --font-poppins: var(--font-poppins-sans);
   --font-abzee: var(--font-abzee-sans);
   --color-primaryBlack: #0A0A0A;
 }
 
-
-
 body {
   color:  #0A0A0A;
   font-family: Poppins, sans-serif;
-  
 }
-
 
 .ant-segmented{
   background-color: transparent !important;
   border: 1px solid white !important;
   border-radius: 6px !important;
-
 }
-
-
 
 .ant-segmented-item-label[aria-selected="true"] {
    color: black !important;
+}
+
+.swiper-pagination-bullet{
+  background-color: rgb(255, 255, 255) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+  background-color: rgb(183, 183, 183);
 }
