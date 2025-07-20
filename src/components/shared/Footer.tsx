@@ -25,7 +25,7 @@ const Footer = () => {
               <h3 className=" text-lg pb-2 text-white/90">Follow us</h3>
               <div className="flex items-center gap-4">
                 <FaInstagram className="size-7 text-white/90 cursor-pointer" />
-                <Mail strokeWidth={1.5} className="size-7 text-white/90 cursor-pointer" />
+                <Mail strokeWidth={1.8} className="size-7 text-white/90 cursor-pointer" />
                 <FaWhatsapp className="size-7 text-white/90 cursor-pointer" />
               </div>
             </div>

@@ -8,7 +8,7 @@ const AboutProject = () => {
       <Container>
         <div className="flex items-center gap-20">
           <div className="flex w-1/2 flex-col gap-4">
-            <h3 className="text-4xl font-semibold pb-6">About the Project</h3>
+            <h3 className="text-5xl font-semibold pb-6">About the Project</h3>
             <p className="text-black/60">
               <p className="pb-2">
               Infinity Aquamont by Infinity Development redefines coastal luxury
