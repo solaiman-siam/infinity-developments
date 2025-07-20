@@ -1,13 +1,14 @@
-import Hero from '@/components/home/Hero';
 import OurProject from '@/components/projects/OurProject';
-import { localImages } from '@/utils/imageProvider';
+import ProjectHero from '@/components/projects/ProjectHero';
+import CommonOverview from '@/components/shared/CommonOverview';
 import React from 'react';
 
 const ProjectsPage = () => {
     return (
         <div>
-            <Hero heroImage={localImages.OurProjects} />
+            <ProjectHero/>
             <OurProject/>
+            <CommonOverview titleText={'Learn More About Zanzibar'}/>
         </div>
     );
 };
