@@ -3,6 +3,7 @@ import Container from "../shared/Container";
 import { MapPin, MoveDown } from "lucide-react";
 import Image from "next/image";
 import { localImages } from "@/utils/imageProvider";
+import Link from "next/link";
 
 const OurProject = () => {
   return (
@@ -19,7 +20,7 @@ const OurProject = () => {
           </p>
         </div>
         <div className="pt-8 px-24 space-y-10">
-          <div className=" flex ">
+          <Link href={'/projects/1'} className=" flex ">
             <div className="relative group w-9/12 flex  h-[550px] overflow-hidden rounded-3xl justify-start items-end ">
               <Image
                 className="absolute  z-2 top-0 h-full w-full   overflow-hidden left-0 "
@@ -42,8 +43,8 @@ const OurProject = () => {
                 alt="project-map1"
               />
             </div>
-          </div>
-          <div className=" flex ">
+          </Link>
+          <Link href={'/projects/2'} className=" flex ">
             <div className="relative group w-9/12 flex h-[550px] overflow-hidden rounded-3xl justify-start items-end ">
               <Image
                 className="absolute z-2 top-0 h-full w-full overflow-hidden left-0 "
@@ -66,8 +67,8 @@ const OurProject = () => {
                 alt="project-map1"
               />
             </div>
-          </div>
-          <div className=" flex ">
+          </Link>
+          <Link href={'/projects/3'} className=" flex ">
             <div className="relative group w-9/12 flex  h-[550px] overflow-hidden rounded-3xl justify-start items-end ">
               <Image
                 className="absolute  z-2 top-0 h-full w-full   overflow-hidden left-0 "
@@ -90,12 +91,10 @@ const OurProject = () => {
                 alt="project-map1"
               />
             </div>
-          </div>
-
+          </Link>
           <div className="flex justify-center items-center">
-            <button className="flex items-center bg-black text-white px-8 py-3 group rounded-lg gap-3">View More <MoveDown className="size-4 group:hover" /></button>
+            <button className="flex items-center bg-black cursor-pointer text-white px-8 py-3 group rounded-lg gap-3">View More <MoveDown className="size-4 group:hover" /></button>
           </div>
-          
         </div>
       </Container>
     </div>

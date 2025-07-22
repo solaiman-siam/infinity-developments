@@ -17,6 +17,11 @@ import Project1 from '@/assets/images/project1.png'
 import ProjectMap1 from '@/assets/images/project-map1.png'
 import FounderImage from '@/assets/images/founders.png'
 import ProjectDeatailsAbout from '@/assets/images/project-details-about.png'
+import CoverFlowImage from '@/assets/images/coverflow-image.png'
+import FloorplanDemo from '@/assets/images/floorplan-demo.png'
+import JungleTrain from '@/assets/images/jungle-train.png'
+import MapImage from '@/assets/images/map-image.png'
+import DubaiIcon from '@/assets/images/dubai-icon.png'
 
 export const localImages = {
 InfinityDevelopmentsLogo,
@@ -35,5 +40,11 @@ OurProjects,
 Project1,
 ProjectMap1,
 FounderImage,
-ProjectDeatailsAbout
+ProjectDeatailsAbout,
+CoverFlowImage,
+FloorplanDemo,
+JungleTrain,
+MapImage,
+DubaiIcon
+
 }
