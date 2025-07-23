@@ -15,7 +15,7 @@ const NewsDetails = () => {
             Properties
           </h3>
 
-          <div className="h-[600px] ">
+          <div className="h-[800px] ">
             <Image
               className="w-full h-full object-cover rounded-xl"
               src={localImages.NewsCardImage1}
