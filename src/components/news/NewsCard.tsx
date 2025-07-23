@@ -5,7 +5,7 @@ import Image from "next/image";
 const NewsCard = () => {
   return (
     <div className="group">
-      <div className={`h-[1000px] overflow-hidden rounded-lg`}>
+      <div className={`h-[500px] overflow-hidden rounded-lg`}>
         <Image
           className="w-full h-full object-cover group-hover:scale-110 transition-all duration-200"
           src={localImages.NewsCardImage1}
