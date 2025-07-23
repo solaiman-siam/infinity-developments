@@ -22,6 +22,7 @@ import FloorplanDemo from '@/assets/images/floorplan-demo.png'
 import JungleTrain from '@/assets/images/jungle-train.png'
 import MapImage from '@/assets/images/map-image.png'
 import DubaiIcon from '@/assets/images/dubai-icon.png'
+import NewsCardImage1 from '@/assets/images/news-card1.png'
 
 export const localImages = {
 InfinityDevelopmentsLogo,
@@ -45,6 +46,7 @@ CoverFlowImage,
 FloorplanDemo,
 JungleTrain,
 MapImage,
-DubaiIcon
+DubaiIcon,
+NewsCardImage1
 
 }
