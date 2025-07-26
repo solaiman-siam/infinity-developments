@@ -32,8 +32,6 @@ body {
 }
 
 
-
-
 .floor-plan-segmented :where(.css-dev-only-do-not-override-1jupzwi).ant-segmented .ant-segmented-item-selected {
   background-color: #0A0A0A !important;
   color: white;

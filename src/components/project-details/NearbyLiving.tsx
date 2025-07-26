@@ -4,6 +4,11 @@ import Image from "next/image";
 import { localImages } from "@/utils/imageProvider";
 
 const NearbyLiving = () => {
+
+  
+
+
+
   return (
     <div className="py-24">
       <Container>

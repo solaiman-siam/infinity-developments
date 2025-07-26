@@ -4,8 +4,6 @@ import Image from "next/image";
 import Container from "../shared/Container";
 import { useState } from "react";
 import { localImages } from "@/utils/imageProvider";
-import { Sidebar } from "lucide-react";
-import { SiLinuxserver } from "react-icons/si";
 
 const OurJourney = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -45,7 +43,7 @@ const OurJourney = () => {
     },
   ];
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index : number) => {
     setActiveSlide(index);
   };
 
@@ -97,7 +95,6 @@ const OurJourney = () => {
                         {slide.year}
                       </h3>
                     </div>
-
                     {/* Details (only shown when active) */}
                     <div
                       className={`pt-4 ml-14 transition-all duration-500 ${

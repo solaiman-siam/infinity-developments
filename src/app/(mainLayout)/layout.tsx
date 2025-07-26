@@ -8,7 +8,9 @@ const MainLayout = ({children} : {children: ReactNode}) => {
             <nav>
                 <Navbar/>
             </nav>
-            {children}
+            <div className='bg-[#FFFEF2]'>
+                {children}
+            </div>
             <footer>
                 <Footer/>
             </footer>

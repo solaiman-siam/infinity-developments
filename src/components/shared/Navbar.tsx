@@ -10,7 +10,7 @@ const Navbar = () => {
 const pathname = usePathname();
 
   return (
-    <div className={`flex  **:text-white backdrop:blur-2xl backdrop-blur-md bg-white/30 ${pathname === '/chairmans-message' || pathname === '/news' ? '!bg-primaryBlack' : ''} top-0 w-full z-50 justify-center  fixed left-0 right-0 py-4 items-center gap-10`}>
+    <div className={`flex  **:text-white backdrop:blur-2xl backdrop-blur-md bg-white/30 ${pathname === '/chairmans-message' || pathname === '/news' || pathname === '/team' ? '!bg-primaryBlack' : ''} top-0 w-full z-50 justify-center  fixed left-0 right-0 py-4 items-center gap-10`}>
       <div className="flex items-center gap-2">
         <Link href={"/"}>
           <h4 className={`${pathname === '/' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Home</h4>
@@ -26,14 +26,14 @@ const pathname = usePathname();
         <Image className="w-52" src={localImages.InfinityDevelopmentsLogo} alt="nav-logo"/>
       </div>
       <div className="flex items-center gap-2">
-        <Link href={"/infinity-foundation"}>
-          <h4 className={`${pathname === '/infinity-foundation' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Infinity Foundation</h4>
-        </Link>
         <Link href={"/news"}>
           <h4 className={`${pathname === '/news' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>News</h4>
         </Link>
         <Link href={"/about"}>
           <h4 className={`${pathname === '/about' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Abouts Us</h4>
+        </Link>
+        <Link href={"/team"}>
+          <h4 className={`${pathname === '/team' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Our Team</h4>
         </Link>
         <Link href={"/contact"}>
           <h4 className={`${pathname === '/contact' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Contact Us</h4>
