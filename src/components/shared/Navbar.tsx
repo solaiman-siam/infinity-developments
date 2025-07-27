@@ -10,7 +10,7 @@ const Navbar = () => {
 const pathname = usePathname();
 
   return (
-    <div className={`flex  **:text-white backdrop:blur-2xl backdrop-blur-md bg-white/30 ${pathname === '/chairmans-message' || pathname === '/news' || pathname === '/team' ? '!bg-primaryBlack' : ''} top-0 w-full z-50 justify-center  fixed left-0 right-0 py-4 items-center gap-10`}>
+    <div className={`flex  **:text-white backdrop:blur-2xl backdrop-blur-md bg-white/30 ${pathname === '/chairmans-message' || pathname === '/news' || pathname === '/team' || pathname === '/contact' ? '!bg-primaryBlack' : ''} top-0 w-full z-50 justify-center  fixed left-0 right-0 py-4 items-center gap-10`}>
       <div className="flex items-center gap-2">
         <Link href={"/"}>
           <h4 className={`${pathname === '/' ? 'border-b border-white ' : 'border-b border-transparent'} text-nowrap mx-4 text-sm  py-1.5 `}>Home</h4>
