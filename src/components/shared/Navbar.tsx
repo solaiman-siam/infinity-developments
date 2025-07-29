@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div
       className={`flex  **:text-white backdrop:blur-2xl backdrop-blur-md bg-white/30 ${
-        pathname === "/chairmans-message" ||
+        pathname === "/founders-message" ||
         pathname === "/news" ||
         pathname === "/team" ||
         pathname === "/contact"
@@ -65,15 +65,15 @@ const Navbar = () => {
             Our Projects
           </h4>
         </Link>
-        <Link href={"/chairmans-message"}>
+        <Link href={"/founders-message"}>
           <h4
             className={`${
-              pathname === "/chairmans-message"
+              pathname === "/founders-message"
                 ? "border-b border-white "
                 : "border-b border-transparent"
             } text-nowrap mx-4 text-sm  py-1.5 `}
           >
-            Chairmans Message
+            Founders Message
           </h4>
         </Link>
       </div>

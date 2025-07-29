@@ -63,3 +63,17 @@ body {
   box-shadow: none !important;
   border-color: #d9d9d9 !important; /* Optional: set to default border color */
 }
+
+:where(.css-dev-only-do-not-override-kf3qvj).ant-modal .ant-modal-content {
+  padding: 0px !important;
+  border-radius: 20px !important;
+}
+
+.ant-modal-close-x {
+  color: white !important;
+}
+
+.ant-upload {
+  width: 100% !important;
+  justify-content: center !important;
+}

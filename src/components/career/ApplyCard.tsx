@@ -1,4 +1,5 @@
 import Container from "../shared/Container";
+import ApplyCareerModal from "./ApplyCareerModal";
 
 const ApplyCard = ({designationName} : {designationName: string}) => {
   return (
@@ -9,9 +10,7 @@ const ApplyCard = ({designationName} : {designationName: string}) => {
             {designationName}
           </h3>
           <div>
-            <button className="px-6 cursor-pointer py-2.5 rounded-md bg-primaryBlack text-white">
-              Apply Now
-            </button>
+            <ApplyCareerModal/>
           </div>
         </div>
       </Container>

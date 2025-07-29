@@ -1,7 +1,7 @@
 import FounderMessage from '@/components/chairmans-message/FounderMessage';
 import React from 'react';
 
-const ChairmansMessagePage = () => {
+const FoundersMessagePage = () => {
     return (
         <div className='bg-[#FFFEF2]'>
             <FounderMessage/>
@@ -9,4 +9,4 @@ const ChairmansMessagePage = () => {
     );
 };
 
-export default ChairmansMessagePage;
+export default FoundersMessagePage;
