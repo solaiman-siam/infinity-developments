@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-poppins: var(--font-poppins-sans);
+  --font-abzee: var(--font-abzee-sans);
+  --color-primaryBlack: #0a0a0a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #0a0a0a;
+  font-family: Poppins, sans-serif;
+}
+
+.custom-segments .ant-segmented {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  border-radius: 6px !important;
+}
+
+.custom-segments .ant-segmented-item-label[aria-selected="true"] {
+  color: black !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  background-color: rgb(183, 183, 183);
+}
+
+.floor-plan-segmented
+  :where(.css-dev-only-do-not-override-1jupzwi).ant-segmented
+  .ant-segmented-item-selected {
+  background-color: #0a0a0a !important;
+  color: white;
+}
+
+.floor-plan-segmented
+  :where(.css-dev-only-do-not-override-1jupzwi).ant-segmented {
+  padding: 5px !important;
+}
+
+.floor-plan-segmented .ant-segmented-item-label {
+  padding: 5px 22px !important;
+}
+
+/* custom select */
+.custom-select  {
+  width: 100% !important;
+  height: 45px !important;
+}
+.custom-select .ant-select-selector {
+  background-color: rgba(219, 219, 219, 0.356) !important;
+  border: 1px solid rgb(165, 165, 165) !important
+}
+.custom-select .ant-select-selection-placeholder {
+  color: rgb(177, 177, 177) !important;
+}
+.ant-select-focused .ant-select-selector {
+  box-shadow: none !important;
+  border-color: #d9d9d9 !important; /* Optional: set to default border color */
+}
+
+:where(.css-dev-only-do-not-override-kf3qvj).ant-modal .ant-modal-content {
+  padding: 0px !important;
+  border-radius: 20px !important;
+}
+
+.ant-modal-close-x {
+  color: white !important;
+}
+
+.ant-upload {
+  width: 100% !important;
+  justify-content: center !important;
 }

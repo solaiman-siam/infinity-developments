@@ -1,0 +1,312 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+2 of 2,472
+Form #1: Zoho Code for Original Form
+Inbox
+
+Jamil Naser <Jamil@clayhealthandcare.com>
+4:30 AM (14 minutes ago)
+to me
+
+<div class="item-form-aoki">
+      <style type='text/css'>
+                  .item-form-aoki{
+                  max-width:  408px;
+                  padding-bottom: 30px;
+                  position: relative;
+              }
+              .item-form-aoki form{
+                  margin-bottom: 0;
+              }
+            .item-form-aoki .wf-field-error{
+                font-size: 12px;
+                  color: red;
+              }
+              .item-form-aoki .btn-submit{
+                  border-radius: 40px;
+                  display: flex;
+                  align-items: center;
+                  font-family: 'Inter', sans-serif;
+                  border: 2px solid #626262;
+                  transition: border-color .4s ease 0s, background-color .4s ease 0s;
+                  background: #626262;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 500;
+                  width: max-content;
+                  padding: 14px 86px;
+                  cursor: pointer;
+                  margin-top: 50px;
+              }
+              .item-form-aoki .wf-label{
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #fff;
+                  margin-bottom: 10px;
+                  font-family: 'Inter', sans-serif;
+              }
+              .item-form-aoki  .wf-row{
+                  margin-bottom: 20px;
+              }
+              .item-form-aoki .main-input{
+                  width: 100%;
+                  background: #fff;
+                  border: none;
+                  padding: 18px 15px;
+                  font-size: 14px;
+                  font-family: 'Inter', sans-serif;
+              }
+              .item-form-aoki .privacy-policy_text a,
+              .item-form-aoki .privacy-policy_text{
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #fff;
+                  font-family: 'Inter', sans-serif;
+              }
+              .item-form-aoki.checkbox-block{
+                    display: flex;    
+                    align-items: center;
+                      gap: 10px;
+                  }
+
+      </style> 
+      <div class='wf-parent' id='BiginWebToRecordFormParent6324563000003022257'>
+          <div class='wf-wrapper' id='BiginWebToRecordFormDiv6324563000003022257'>
+              
+              <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+              
+              <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+              <form id='BiginWebToRecordForm6324563000003022257' name='BiginWebToRecordForm6324563000003022257' class='wf-form-component' data-ux-form-alignment='top' style='font-family: Arial;position: relative;font-size:15px;' method='POST' enctype='multipart/form-data' onSubmit='javascript:document.charset="UTF-8"; return validateForm6324563000003022257()' accept-charset='UTF-8'>
+                  <!-- Do not remove this code. -->
+                  <input type='text' style='display:none;' name='xnQsjsdp' value='c1645bfdde13fcc08728a8be82faa35e694cd1b533ca98ad91cfea6064bb8707' />
+                  <input type='hidden' name='zc_gad' id='zc_gad' value='' />
+                  <input type='text' style='display:none;' name='xmIwtLD' value='cfacc896303761f3d822cb6412b12418d55bfffe5eab5dd55acaa515f506815d9ec7934e37cf1f0a78f5b07b13c0f165' />
+                  <input type='text' style='display:none;' name='actionType' value='Q29udGFjdHM=' />
+                  <input type='text' style='display:none;' name='returnURL' value='https://www.clayhealthandcare.com/' />
+
+                  <div id='elementDiv6324563000003022257' class='wf-form-wrapper'>
+                      <div class='wf-row'>
+                          <div class='wf-label'>First Name</div>
+                          <div class='wf-field wf-field-mandatory'>
+                              <div class='wf-field-inner'>
+                                  <input name='First Name' maxlength='40' type='text' value='' class='wf-field-item wf-field-input main-input' oninput='removeError(this)' />
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wf-row'>
+                          <div class='wf-label'>Last Name *</div>
+                          <div class='wf-field wf-field-mandatory'>
+                              <div class='wf-field-inner'>
+                                  <input name='Last Name' maxlength='80' type='text' value='' class='wf-field-item wf-field-input main-input' oninput='removeError(this)' />
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wf-row'>
+                          <div class='wf-label'>Email *</div>
+                          <div class='wf-field wf-field-mandatory'>
+                              <div class='wf-field-inner'>
+                                  <input fvalidate='true' ftype='email' name='Email' maxlength='100' type='text' value='' class='wf-field-item wf-field-input main-input' oninput='removeError(this)' />
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wf-row'>
+                          <div class='wf-label'>Phone *</div>
+                          <div class='wf-field wf-field-mandatory'>
+                              <div class='wf-field-inner'>
+                                  <input fvalidate='true' ftype='mobile' name='Phone' maxlength='50' type='text' value='' class='wf-field-item wf-field-input main-input' oninput='removeError(this)' />
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wf-row'>
+                          <div class='wf-label'>Mailing Zip *</div>
+                          <div class='wf-field wf-field-mandatory'>
+                              <div class='wf-field-inner'>
+                                  <input name='Mailing Zip' maxlength='30' type='text' value='' class='main-input wf-field-item wf-field-input' oninput='removeError(this)' />
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wf-row'>
+                          <div class='wf-label'></div>
+                          <div class='wf-field'>
+                              <div class='wf-field-inner flex-center-v checkbox-block'>
+                                  <input name='CONTACTCF104' id='CONTACTCF104' type='checkbox' class='wf-field-item wf-field-checkbox' onchange='removeError(this)' />
+                                  <label for='CONTACTCF104' class='cP privacy-policy_text '>I agree to the Clay  <a href="https://www.clayhealthandcare.com/terms-of-service" target="_blank">Terms of use</a>&nbsp;and&nbsp;
+                                                          <a href="https://www.clayhealthandcare.com/privacy-policy" target="_blank">Privacy policy</a>.</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class='wform-btn-wrap' data-ux-pos='left'>
+                          <input id='formsubmit' type='submit' class='btn-submit wf-btn' data-ux-btn-type='default' value='Submit' />
+                      </div>
+                  </div>
+
+              </form>
+
+          </div>
+      </div>
+</div>
+<script>
+    var mndFileds = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Phone', 'Mailing\x20Zip', 'CONTACTCF104');
+    var fldLangVal = new Array('First Name', 'Last Name', 'Email', 'Phone', 'Mailing Zip', 'I agree to the Clay Terms of Use &amp; Privacy Policy.');
+    var wfInnerWidth = window.innerWidth;
+    if (wfInnerWidth <= 768) {
+        document.forms['BiginWebToRecordForm6324563000003022257'].setAttribute('data-ux-form-alignment', 'top');
+    }
+
+    function removeError(fieldObj) {
+        var parentElement = fieldObj.closest('.wf-field'),
+            childEle = parentElement.getElementsByClassName('wf-error-parent-ele')[0];
+        if (childEle) {
+            parentElement.classList.remove('wf-field-error-active');
+            parentElement.removeChild(parentElement.getElementsByClassName('wf-error-parent-ele')[0]);
+        }
+    }
+
+    function setError(fieldObj, label) {
+        var parentElement = fieldObj.closest('.wf-field'),
+            childEle = parentElement.getElementsByClassName('wf-error-parent-ele')[0];
+        if (!childEle) {
+            var errorParentEle = document.createElement('DIV'),
+                spanEle = document.createElement('SPAN'),
+                viewMoreEle = document.createElement('SPAN');
+            spanEle.setAttribute('class', 'wf-field-error wf-field-error-long');
+            spanEle.innerHTML = label;
+            errorParentEle.classList.add('wf-error-parent-ele');
+            errorParentEle.appendChild(spanEle);
+            parentElement.append(errorParentEle);
+            parentElement.classList.add('wf-field-error-active');
+            if (spanEle.scrollWidth > parentElement.offsetWidth) {
+                viewMoreEle.innerHTML = 'View More';
+                viewMoreEle.classList.add('wf-error-view-more');
+                errorParentEle.append(viewMoreEle);
+                viewMoreEle.addEventListener('click', function() {
+                    errorParentEle.removeChild(viewMoreEle);
+                    spanEle.classList.remove('wf-field-error-long');
+                });
+            } else {
+                spanEle.classList.remove('wf-field-error-long')
+            }
+        }
+    }
+
+    function validateFields6324563000003022257() {
+        var isReturn = true;
+        var form = document.forms['BiginWebToRecordForm6324563000003022257'];
+        var validateFld = form.querySelectorAll('[fvalidate=true]');
+        var i;
+        for (i = 0; i < validateFld.length; i++) {
+            var validateFldVal = validateFld[i].value;
+            if (validateFldVal !== '') {
+                var fLabel = validateFld[i].parentElement.parentElement.parentElement.getElementsByClassName('wf-label')[0].innerHTML;
+                switch (validateFld[i].getAttribute('ftype')) {
+                    case 'string_rest_number':
+                    case 'string':
+                        var isError = false,
+                            errorKey = 'Only letters are allowed.';
+                        if (validateFld[i].getAttribute('ftype') === 'string_rest_number' && validateFldVal.match((/\d/g)) !== null) {
+                            isError = true;
+                        } else if (validateFld[i].hasAttribute('fmin')) {
+                            if (validateFldVal.length < parseInt(validateFld[i].getAttribute('fmin'))) {
+                                errorKey = 'Your input must be at least ' + validateFld[i].getAttribute('fmin') + ' character(s).';
+                                isError = true;
+                            } else if (validateFldVal.length > parseInt(validateFld[i].getAttribute('fmax'))) {
+                                errorKey = 'Your input should not exceed ' + validateFld[i].getAttribute('fmax') + ' character(s).';
+                                isError = true;
+                            }
+                        }
+                        if (isError) {
+                            setError(validateFld[i], errorKey);
+                            isReturn = false;
+                        }
+                        break;
+                    case 'email':
+                        if (validateFldVal.match(/^([A-Za-z0-9-._%'+/]+@[A-Za-z0-9.-]+.[a-zA-Z]{2,22})$/) === null) {
+                            setError(validateFld[i], 'Enter valid ' + fLabel);
+                            isReturn = false;
+                        }
+                        break;
+                    case 'number':
+                    case 'double':
+                        var isError = false,
+                            errorKey = 'Enter valid ' + fLabel;
+                        if ((validateFld[i].getAttribute('ftype') === 'number' && validateFldVal.match(/^[0-9]+$/) === null) ||
+                            (validateFld[i].getAttribute('ftype') === 'double' && validateFldVal.match(/^[0-9]*(\.[0-9]{0,2})?$/) === null)) {
+                            isError = true;
+                        } else if (validateFld[i].hasAttribute('fmin')) {
+                            if (validateFldVal < parseInt(validateFld[i].getAttribute('fmin'))) {
+                                errorKey = 'Enter a number greater than or equal to ' + validateFld[i].getAttribute('fmin');
+                                isError = true;
+                            } else if (validateFldVal > parseInt(validateFld[i].getAttribute('fmax'))) {
+                                errorKey = 'Enter a number less than or equal to ' + validateFld[i].getAttribute('fmax');
+                                isError = true;
+                            }
+                        }
+                        if (isError) {
+                            setError(validateFld[i], errorKey);
+                            isReturn = false;
+                        }
+                        break;
+                    case 'mobile':
+                        if (validateFldVal.match(/^[0-9a-zA-Z+.()\-;\s]+$/) === null) {
+                            setError(validateFld[i], 'Enter valid ' + fLabel);
+                            isReturn = false;
+                        }
+                        break;
+                }
+            }
+        }
+        return isReturn;
+    }
+
+    function checkMandatory6324563000003022257() {
+        var isReturn = true;
+        var isNotCaptcha = false;
+        for (i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['BiginWebToRecordForm6324563000003022257'][mndFileds[i]];
+            if (fieldObj) {
+                if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                    if (fieldObj.type == 'file') {
+                        setError(fieldObj, 'Please select a file to upload.');
+                        isReturn = false;
+                    } else {
+                        setError(fieldObj, fldLangVal[i] + ' cannot be empty');
+                        isReturn = false;
+                    }
+                } else if (fieldObj.nodeName == 'SELECT') {
+                    if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                        setError(fieldObj, fldLangVal[i] + ' cannot be none.');
+                        isReturn = false;
+                    }
+                } else if (fieldObj.type == 'checkbox') {
+                    if (fieldObj.checked == false) {
+                        setError(fieldObj, 'Please accept  ' + fldLangVal[i]);
+                        isReturn = false;
+                    }
+                }
+            }
+        }
+        isNotCaptcha = true;
+        if (!validateFields6324563000003022257()) {
+            isReturn = false;
+        }
+        if (!isReturn) {
+            var errEle = document.getElementsByClassName('wf-field-error');
+            if (errEle && errEle.length > 0) {
+                var inputEle = errEle[0].closest('.wf-field').getElementsByTagName('input');
+                if (inputEle && inputEle.length == 0) {
+                    inputEle = errEle[0].closest('.wf-field').getElementsByTagName('select');
+                }
+                if (inputEle && inputEle.length > 0) {
+                    inputEle[0].focus();
+                }
+            }
+        } else if (isNotCaptcha) {
+            document.getElementById('formsubmit').disabled = true;
+        }
+        return isReturn;
+    }
+</script>
+ <script id='wf_script' src='https://bigin.zoho.com/crm/WebformScriptServlet?rid=cfacc896303761f3d822cb6412b12418d55bfffe5eab5dd55acaa515f506815d9ec7934e37cf1f0a78f5b07b13c0f165gidc1645bfdde13fcc08728a8be82faa35e694cd1b533ca98ad91cfea6064bb8707'></script>
