@@ -4,9 +4,38 @@ import Image from "next/image";
 import { Popover, Segmented } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// gsap.registerPlugin(ScrollTrigger)
 const Navbar = () => {
   const pathname = usePathname();
+
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const animation =  gsap.to('.navbar', {
+      opacity: 1,
+      duration: 2,
+      background: 'black',
+      ease: 'power2.out',
+    })
+
+    ScrollTrigger.create({
+      animation: animation,
+      trigger: '.navbar',
+      start: "top -30%",
+      toggleActions: 'play none none none'
+    })
+
+    return () => { 
+      animation.kill(); 
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      }
+  }, [])
+
+
 
   const content = (
     <div className="flex flex-col gap-2">
@@ -40,7 +69,7 @@ const Navbar = () => {
         pathname === "/contact"
           ? "!bg-primaryBlack"
           : ""
-      } top-0 w-full z-50 justify-center  fixed left-0 right-0 py-4 items-center gap-10`}
+      } top-0 w-full z-50 justify-center navbar  fixed left-0 right-0 py-4 items-center gap-10`}
     >
       <div className="flex items-center gap-2">
         <Link href={"/"}>
