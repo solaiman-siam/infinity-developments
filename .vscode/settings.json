@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "",
     "editor.inlineSuggest.fontFamily": "Fira Code",
     "debug.console.fontFamily": "Fira Code",
     "scm.inputFontFamily": "Fira Code",

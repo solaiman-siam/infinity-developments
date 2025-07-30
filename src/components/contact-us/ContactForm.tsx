@@ -2,7 +2,6 @@
 
 import { Checkbox, Select } from "antd";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 const onCheckboxChange = () => {
 
 }
@@ -56,22 +55,6 @@ const ContactForm = () => {
               id=""
             />
           </div>
-          <div className="flex  flex-col gap-2">
-            <label className="text-primaryBlack font-thin" htmlFor="">
-              Select Property Type
-            </label>
-            <div>
-              <Select
-                placeholder='Select property'
-                className="custom-select"
-                options={[
-                  { value: "jack", label: "Jack" },
-                  { value: "lucy", label: "Lucy" },
-                  { value: "Yiminghe", label: "yiminghe" },
-                ]}
-              />
-            </div>
-          </div>
           <div className="flex items-center gap-5">
             <div className="flex-1 flex flex-col gap-2">
               <label className="text-primaryBlack font-thin" htmlFor="">
@@ -98,9 +81,9 @@ const ContactForm = () => {
                 placeholder='Unit type'
                 className="custom-select"
                 options={[
-                  { value: "jack", label: "Jack" },
-                  { value: "lucy", label: "Lucy" },
-                  { value: "Yiminghe", label: "yiminghe" },
+                  { value: "1", label: "1" },
+                  { value: "2", label: "2" },
+                  { value: "3", label: "3" },
                 ]}
               />
             </div>
