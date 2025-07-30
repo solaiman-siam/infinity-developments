@@ -3,11 +3,11 @@
 import Image from "next/image";
 import Container from "../shared/Container";
 import { localImages } from "@/utils/imageProvider";
-import AnimateTextWrapper from "../shared/AnimateTextWrapper";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import AnimateTextWrapper from "../shared/AnimateTextWrapper";
 
 const OurValues = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -40,7 +40,7 @@ const OurValues = () => {
         animation: animation,
         start: "top 80%", // When top of image hits 70% of viewport
         toggleActions: "play none none none",
-        markers: true, // Remove in production
+        markers: false, // Remove in production
       });
     });
 
@@ -82,7 +82,6 @@ const OurValues = () => {
             </div>
             <div className="flex flex-col gap-2">
               <AnimateTextWrapper>
-                {" "}
                 <h3 className="text-3xl text-white w-4/12 font-medium pb-4">
                   Cultural Preservation
                 </h3>
@@ -137,7 +136,8 @@ const OurValues = () => {
               <AnimateTextWrapper><h3 className="text-3xl text-white w-4/12 font-medium pb-4">
                 Community First
               </h3></AnimateTextWrapper>
-             <AnimateTextWrapper> <p className="text-white/70 font-thin ">
+             <AnimateTextWrapper> 
+              <p className="text-white/70 font-thin ">
                 Unity is the foundation of Infinity. We consciously plan,
                 design, and build to facilitate experiences that forge a deep
                 sense of place. Whether on remote islands or in grand cities,

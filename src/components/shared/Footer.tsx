@@ -18,7 +18,6 @@ const Footer = () => {
               alt="logo"
             />
             <AnimateTextWrapper>
-              {" "}
               <p className="text-white/90 text-[15px] pt-4 font-thin">
                 Crafting unparalleled luxury experiences through innovative
                 design and meticulous attention to detail, setting new standards
@@ -39,7 +38,6 @@ const Footer = () => {
           </div>
           <div className="">
             <AnimateTextWrapper>
-              {" "}
               <h3 className=" text-lg  text-white/90 text-nowrap">
                 Quick Links
               </h3>
@@ -47,7 +45,6 @@ const Footer = () => {
             <div className="flex flex-col **:text-white/80 pt-4 items-start gap-2">
               <Link href={"/projects"}>
                 <AnimateTextWrapper>
-                  {" "}
                   <h4 className="text-[15px] font-thin hover:text-white/100">
                     Projects
                   </h4>

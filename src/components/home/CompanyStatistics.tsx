@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../shared/Container";
 import { MoveRight } from "lucide-react";
 import SlotCounter from 'react-slot-counter';
+import AnimateTextWrapper from "../shared/AnimateTextWrapper";
 const CompanyStatistics = () => {
   return (
     <div className="pb-24">
@@ -22,10 +23,10 @@ const CompanyStatistics = () => {
             </div>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <p className="text-white/90">
+            <AnimateTextWrapper><p className="text-white/90">
               Join us on the path to prosperity. Contact us today to explore
               these unique opportunities.
-            </p>
+            </p></AnimateTextWrapper>
             <div className="flex items-center pt-4 translate-x-6">
               <button className="px-5 flex  cursor-pointer items-center gap-3 group py-3 rounded-lg bg-white text-primaryBlack">
                 Contact Us

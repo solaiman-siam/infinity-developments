@@ -1,16 +1,16 @@
 'use client';
 
-import React, { useRef } from "react";
-import type { ReactElement, ReactNode } from "react";
-import gsap from "gsap";
-import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import React, { useRef } from 'react';
+import type { ReactElement, Ref } from 'react';
+import gsap from 'gsap';
+import { SplitText } from 'gsap/SplitText';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-interface CopyProps {
-  children: ReactNode;
+interface AnimateTextWrapperProps {
+  children: ReactElement<{ ref?: Ref<HTMLDivElement> }>;
   animateOnScroll?: boolean;
   delay?: number;
 }
@@ -19,99 +19,71 @@ export default function AnimateTextWrapper({
   children,
   animateOnScroll = true,
   delay = 0,
-}: CopyProps): React.ReactElement {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const elementRef = useRef<HTMLElement[]>([]);
-  //@ts-ignore
-  const splitRef = useRef<any[]>([]);
-  const lines = useRef<HTMLElement[]>([]);
+}: AnimateTextWrapperProps): ReactElement {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
     () => {
       const container = containerRef.current;
       if (!container) return;
 
-      elementRef.current = [];
-      splitRef.current = [];
-      lines.current = [];
+      const elements =
+        container.hasAttribute('data-copy-wrapper')
+          ? Array.from(container.children)
+          : [container];
 
-      let elements: HTMLElement[] = [];
-
-      if (container.hasAttribute("data-copy-wrapper")) {
-        elements = Array.from(container.children) as HTMLElement[];
-      } else {
-        elements = [container];
-      }
+      const lines: HTMLElement[] = [];
+      const splitInstances: SplitText[] = [];
 
       elements.forEach((element) => {
-        elementRef.current.push(element);
-
-        const split = new SplitText(element, {
-          type: "lines",
-          linesClass: "line++",
-          mask: 'lines'
+        const split = new SplitText(element as HTMLElement, {
+          type: 'lines',
+          linesClass: 'line++',
+          mask: 'lines',
         });
 
-        splitRef.current.push(split);
+        splitInstances.push(split);
 
         const textIndent = window.getComputedStyle(element).textIndent;
-
-        if (textIndent === "0px" && split.lines && split.lines.length > 0) {
+        if (textIndent === '0px' && split.lines.length > 0) {
           (split.lines[0] as HTMLElement).style.paddingLeft = textIndent;
-          element.style.textIndent = "0";
+          (element as HTMLElement).style.textIndent = '0';
         }
 
-        if (split.lines) {
-          lines.current.push(...(split.lines as HTMLElement[]));
-        }
+        lines.push(...(split.lines as HTMLElement[]));
       });
 
-      gsap.set(lines.current, { y: "100%" });
+      gsap.set(lines, { y: '100%' });
 
       const animationProps = {
-        y: "0%",
+        y: '0%',
         duration: 2,
         stagger: 0.1,
-        ease: "power4.out",
-        delay: delay,
+        ease: 'power4.out',
+        delay,
       };
 
       if (animateOnScroll) {
-        gsap.to(lines.current, {
+        gsap.to(lines, {
           ...animationProps,
           scrollTrigger: {
             trigger: container,
-            start: "top 75%",
+            start: 'top 75%',
             once: true,
           },
         });
       } else {
-        gsap.to(lines.current, animationProps);
+        gsap.to(lines, animationProps);
       }
 
       return () => {
-        splitRef.current.forEach((split) => {
-          if (split && typeof split.revert === "function") {
-            split.revert();
-          }
-        });
+        splitInstances.forEach((split) => split.revert());
       };
     },
     { scope: containerRef, dependencies: [animateOnScroll, delay] }
   );
 
-  if (
-    React.Children.count(children) === 1 &&
-    React.isValidElement(children)
-  ) {
-    return React.cloneElement(children as ReactElement<any>, {
-      ref: containerRef,
-    });
-  }
-
-  return (
-    <div ref={containerRef} data-copy-wrapper="true">
-      {children}
-    </div>
-  );
+  return React.cloneElement(children, {
+    ref: containerRef,
+  });
 }

@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Container from "../shared/Container";
 import { MoveRight } from "lucide-react";
-import AnimateTextWrapper from "../shared/animateTextWrapper";
+import AnimateTextWrapper from "../shared/AnimateTextWrapper";
 
 const Hero = ({ heroImage }: { heroImage: StaticImageData }) => {
   return (
