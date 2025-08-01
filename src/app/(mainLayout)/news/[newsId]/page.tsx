@@ -4,42 +4,51 @@ import Container from "@/components/shared/Container";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import parse from 'html-react-parser';
-const NewsDetails = async({params} ) => {
+import parse from "html-react-parser";
 
-  const {newsId} = await params;
+const NewsDetails = async ({
+  params,
+}: {
+  params: Promise<{ newsId: string }>;
+}) => {
+  const { newsId } = await params;
 
-async function fetchNewsList() {
-  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list` , {next: {revalidate: 30}});
-  return await res.json();
-}
+  async function fetchNewsList() {
+    const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list`, {
+      next: { revalidate: 30 },
+    });
+    return await res.json();
+  }
 
-async function fetchNewsDetails(newsId) {
-  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/details/${newsId}`);
-  return await res.json();
-}
+  async function fetchNewsDetails(newsId: string) {
+    const res = await fetch(
+      `${process.env.NEXT_API_URL}/api/news/details/${newsId}`
+    );
+    return await res.json();
+  }
 
-// Usage
-const newsList = await fetchNewsList();
-const newsDetails = await fetchNewsDetails(newsId);
+  // Usage
+  const newsList = await fetchNewsList();
+  const newsDetails = await fetchNewsDetails(newsId);
 
-  const imageUrl = `${process.env.NEXT_API_URL}/${newsDetails?.data?.avatar}`
-const formatted = new Date(newsDetails?.data?.created_at).toLocaleDateString("en-US", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
+  const imageUrl = `${process.env.NEXT_API_URL}/${newsDetails?.data?.avatar}`;
+  const formatted = new Date(newsDetails?.data?.created_at).toLocaleDateString(
+    "en-US",
+    {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }
+  );
 
-
-console.log(newsDetails);
-
+  console.log(newsDetails);
 
   return (
     <div className="pt-40">
       <Container>
         <div>
           <h3 className="text-4xl font-medium pb-6 w-11/12">
-          {newsDetails?.data?.title}
+            {newsDetails?.data?.title}
           </h3>
           <div className="h-[800px] ">
             <Image
@@ -53,11 +62,13 @@ console.log(newsDetails);
           <div className="flex pt-4 items-center gap-4">
             <h4 className="font-medium text-[17px]">ARTICLES</h4>
             <li className="text-primaryBlack/50">{formatted}</li>
-            <li className="text-primaryBlack/50 uppercase">{newsDetails?.data?.read_time}</li>
+            <li className="text-primaryBlack/50 uppercase">
+              {newsDetails?.data?.read_time}
+            </li>
           </div>
           {/* description */}
           <div className="pt-4 pb-10">
-           {parse(newsDetails?.data?.description)}
+            {parse(newsDetails?.data?.description)}
           </div>
           <div className="flex gap-1">
             <h4 className="text-primaryBlack font-medium">Source:</h4>
@@ -76,9 +87,9 @@ console.log(newsDetails);
             </div>
           </div>
           <div className="grid pb-24 grid-cols-2 gap-10">
-             {newsList.data.slice(2).map((news : INews) => (
-            <NewsCard key={news.id} newsData={news} />
-          ))}
+            {newsList.data.slice(2).map((news: INews) => (
+              <NewsCard key={news.id} newsData={news} />
+            ))}
           </div>
         </div>
       </Container>
