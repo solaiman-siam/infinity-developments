@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react";
 import React from "react";
 
 const NewsPage = async () => {
-  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list` , {next: {}});
+  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list` , {next: { revalidate: 30}});
   const newsList = await res.json();
 
   return (

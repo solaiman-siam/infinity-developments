@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, ABeeZee } from "next/font/google";
 import "./globals.css";
 import { ConfigProvider } from "antd";
-import ReactLenis from "lenis/react";
+// import ReactLenis from "lenis/react";
 
 const poppins = Poppins({
   variable: "--font-poppins-sans",
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         <ConfigProvider theme={theme}>
           <body
             className={`${poppins.variable} ${abzee.variable} antialiased`}
@@ -43,7 +43,7 @@ export default function RootLayout({
             {children}
           </body>
         </ConfigProvider>
-      </ReactLenis>
+      {/* </ReactLenis> */}
     </html>
   );
 }

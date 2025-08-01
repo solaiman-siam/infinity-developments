@@ -66,7 +66,9 @@ const Navbar = () => {
         pathname === "/founders-message" ||
         pathname === "/news" ||
         pathname === "/team" ||
-        pathname === "/contact"
+        pathname === "/contact" ||
+        pathname === "/projects" 
+
           ? "!bg-primaryBlack"
           : ""
       } top-0 w-full z-50 justify-center navbar  fixed left-0 right-0 py-4 items-center gap-10`}

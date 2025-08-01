@@ -8,3 +8,10 @@ export interface INews {
     read_time: string,
     
 }
+export interface IProject {
+    avatar: string,
+    address: string,
+    name: string,
+    id: number,
+    
+}

@@ -4,7 +4,6 @@ import { localImages } from "@/utils/imageProvider";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
-import AnimateTextWrapper from "./AnimateTextWrapper";
 
 const Footer = () => {
   return (
@@ -17,13 +16,13 @@ const Footer = () => {
               src={localImages.InfinityDevelopmentsLogo}
               alt="logo"
             />
-            <AnimateTextWrapper>
-              <p className="text-white/90 text-[15px] pt-4 font-thin">
-                Crafting unparalleled luxury experiences through innovative
-                design and meticulous attention to detail, setting new standards
-                in hospitality and real estate development.
-              </p>
-            </AnimateTextWrapper>
+
+            <p className="text-white/90 text-[15px] pt-4 font-thin">
+              Crafting unparalleled luxury experiences through innovative design
+              and meticulous attention to detail, setting new standards in
+              hospitality and real estate development.
+            </p>
+
             <div className="flex flex-col gap-1 pt-6">
               <h3 className=" text-lg pb-2 text-white/90">Follow us</h3>
               <div className="flex items-center gap-4">
@@ -37,39 +36,28 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <AnimateTextWrapper>
-              <h3 className=" text-lg  text-white/90 text-nowrap">
-                Quick Links
-              </h3>
-            </AnimateTextWrapper>
+            <h3 className=" text-lg  text-white/90 text-nowrap">Quick Links</h3>
+
             <div className="flex flex-col **:text-white/80 pt-4 items-start gap-2">
               <Link href={"/projects"}>
-                <AnimateTextWrapper>
-                  <h4 className="text-[15px] font-thin hover:text-white/100">
-                    Projects
-                  </h4>
-                </AnimateTextWrapper>
+                <h4 className="text-[15px] font-thin hover:text-white/100">
+                  Projects
+                </h4>
               </Link>
               <Link href={"/about"}>
-                <AnimateTextWrapper>
-                  <h4 className="text-[15px] font-thin hover:text-white/100">
-                    About Us
-                  </h4>
-                </AnimateTextWrapper>
+                <h4 className="text-[15px] font-thin hover:text-white/100">
+                  About Us
+                </h4>
               </Link>
               <Link href={"/news"}>
-                <AnimateTextWrapper>
-                  <h4 className="text-[15px] font-thin hover:text-white/100">
-                    News{" "}
-                  </h4>
-                </AnimateTextWrapper>
+                <h4 className="text-[15px] font-thin hover:text-white/100">
+                  News{" "}
+                </h4>
               </Link>
               <Link href={"/contact"}>
-                <AnimateTextWrapper>
-                  <h4 className="text-[15px] font-thin hover:text-white/100">
-                    Contact Us
-                  </h4>
-                </AnimateTextWrapper>
+                <h4 className="text-[15px] font-thin hover:text-white/100">
+                  Contact Us
+                </h4>
               </Link>
             </div>
           </div>
@@ -79,55 +67,43 @@ const Footer = () => {
               <Link href={"/projects"}>
                 <h4 className="text-[15px] font-thin flex gap-2  hover:text-white/100">
                   <MapPin strokeWidth={1.5} className="size-6 text-white/90" />{" "}
-                  <AnimateTextWrapper>
-                    <span>
-                      Office 2008, 20th Floor, Infinity Tower, Dubai, UAE
-                    </span>
-                  </AnimateTextWrapper>
+                  <span>
+                    Office 2008, 20th Floor, Infinity Tower, Dubai, UAE
+                  </span>
                 </h4>
               </Link>
               <Link href={"/about"}>
                 <h4 className="text-[15px] font-thin flex gap-2  hover:text-white/100">
                   <MapPin strokeWidth={1.5} className="size-6 text-white/90" />{" "}
-                  <AnimateTextWrapper>
-                    <span>
-                      Building No 869, Malindi Funguni Street, Stone Town,
-                      Zanzibar
-                    </span>
-                  </AnimateTextWrapper>
+                  <span>
+                    Building No 869, Malindi Funguni Street, Stone Town,
+                    Zanzibar
+                  </span>
                 </h4>
               </Link>
               <Link href={"/news"}>
                 <h4 className="text-[15px] font-thin flex gap-2.5  hover:text-white/100">
                   <Phone strokeWidth={1.5} className="size-5 text-white/90" />{" "}
-                  <AnimateTextWrapper>
-                    <span>+971 4 578 8088</span>
-                  </AnimateTextWrapper>
+                  <span>+971 4 578 8088</span>
                 </h4>
               </Link>
               <Link href={"/contact"}>
-                  <h4 className="text-[15px] font-thin  flex gap-2.5  hover:text-white/100">
-                    <Mail strokeWidth={1.5} className="size-5 text-white/90" />
-                <AnimateTextWrapper>
-                    <span>info@infinitydevelopment.ae</span>
-                </AnimateTextWrapper>
-                  </h4>
+                <h4 className="text-[15px] font-thin  flex gap-2.5  hover:text-white/100">
+                  <Mail strokeWidth={1.5} className="size-5 text-white/90" />
+
+                  <span>info@infinitydevelopment.ae</span>
+                </h4>
               </Link>
             </div>
           </div>
 
           <div>
-            <AnimateTextWrapper>
-              <h3 className=" text-lg  text-white/90 text-nowrap">
-                Newsletter
-              </h3>
-            </AnimateTextWrapper>
+            <h3 className=" text-lg  text-white/90 text-nowrap">Newsletter</h3>
 
-            <AnimateTextWrapper>
-              <p className="text-white/80 pt-3 text-[15px] font-thin w-8/12">
-                Stay updated with our latest projects and news
-              </p>
-            </AnimateTextWrapper>
+            <p className="text-white/80 pt-3 text-[15px] font-thin w-8/12">
+              Stay updated with our latest projects and news
+            </p>
+
             <div className="pt-4">
               <div className="bg-white py-1 rounded-lg flex items-center w-fit px-2 ">
                 <input
@@ -145,11 +121,10 @@ const Footer = () => {
         </div>
       </Container>
       <div className="border-[.5px] w-full border-white/5 mt-10"></div>
-      <AnimateTextWrapper>
-        <h4 className="text-center text-white/60 pt-4 text-sm font-thin">
-          © 2021-2025, infinity development. All Rights Reserved.
-        </h4>
-      </AnimateTextWrapper>
+
+      <h4 className="text-center text-white/60 pt-4 text-sm font-thin">
+        © 2021-2025, infinity development. All Rights Reserved.
+      </h4>
     </div>
   );
 };

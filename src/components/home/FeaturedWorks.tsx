@@ -53,7 +53,7 @@ const FeaturedWorks = () => {
 
 
   return (
-    <div ref={containerRef} className="bg-white py-24">
+    <div ref={containerRef} className="bg-white pt-52 py-24">
       <Container>
         <div className="flex justify-between items-end">
           <div>

@@ -5,12 +5,12 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import parse from 'html-react-parser';
-const NewsDetails = async({params}) => {
+const NewsDetails = async({params} ) => {
 
   const {newsId} = await params;
 
 async function fetchNewsList() {
-  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list`);
+  const res = await fetch(`${process.env.NEXT_API_URL}/api/news/list` , {next: {revalidate: 30}});
   return await res.json();
 }
 
@@ -41,7 +41,6 @@ console.log(newsDetails);
           <h3 className="text-4xl font-medium pb-6 w-11/12">
           {newsDetails?.data?.title}
           </h3>
-
           <div className="h-[800px] ">
             <Image
               className="w-full h-full object-cover rounded-xl"
@@ -60,12 +59,10 @@ console.log(newsDetails);
           <div className="pt-4 pb-10">
            {parse(newsDetails?.data?.description)}
           </div>
-
           <div className="flex gap-1">
             <h4 className="text-primaryBlack font-medium">Source:</h4>
             <p className="text-primaryBlack/70">The Citizen</p>
           </div>
-
           {/* related articles */}
           <div className="flex pt-14 pb-10 justify-between items-center">
             <div className="flex w-7/12 flex-col gap-2">
