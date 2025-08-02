@@ -9,7 +9,6 @@ const onCheckboxChange = () => {};
 const ContactForm = () => {
   const [value, setValue] = useState();
 
-
   return (
     <div className="**:text-white/80 p-6  border  backdrop:blur-xl backdrop-blur-lg border-white/20 rounded-xl">
       <div className="flex flex-col justify-center items-center">
@@ -53,7 +52,7 @@ const ContactForm = () => {
             <PhoneInput
               placeholder="Enter phone number"
               value={value}
-              onChange={setValue}
+              onChange={() => setValue}
             />
           </div>
           <div className="flex flex-col gap-2">

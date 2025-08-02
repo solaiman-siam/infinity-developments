@@ -29,7 +29,6 @@ useGSAP(() => {
   ScrollTrigger.create({
     animation: animation,
     start: "top -30%", // Triggers when element is 70% from the top
-    markers: true,    // Debugging (remove in production)
     toggleActions: "play none none none",
   });
 }, { scope: heroRef });
