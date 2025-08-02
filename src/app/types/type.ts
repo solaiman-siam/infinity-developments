@@ -15,3 +15,12 @@ export interface IProject {
     id: number,
     
 }
+
+export interface ITeam {
+    name: string,
+    avatar: string,
+    id: number,
+    designation: string,
+    status: string,
+    description: string
+}

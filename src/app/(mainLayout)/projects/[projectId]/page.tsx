@@ -12,7 +12,12 @@ const ProjectDetails = async ({
   params: Promise<{ projectId: string }>;
 }) => {
   const { projectId } = await params;
-  console.log(projectId);
+  
+
+  const res = await fetch(`${process.env.NEXT_API_URL}/api/project/${projectId}/show`);
+
+  const projectDetails = await res.json();
+
 
   return (
     <div className="">

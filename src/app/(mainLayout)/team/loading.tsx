@@ -1,12 +1,12 @@
 import React from 'react';
 import { BarLoader } from 'react-spinners';
 
-const ProjectLoading = () => {
+const TeamLoader = () => {
     return (
         <div className='h-screen flex justify-center items-center'>
-            <BarLoader width={200} height={5} />
+            <BarLoader width={100} height={5} />
         </div>
     );
 };
 
-export default ProjectLoading;
+export default TeamLoader;
