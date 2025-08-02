@@ -9,7 +9,7 @@ const OurProject = async () => {
  const res = await fetch(`${process.env.NEXT_API_URL}/api/project/list`, {next: { revalidate: 30}});
 
   const projectList = await res.json();
-  console.log(projectList);
+  console.log( 'projectList', projectList);
   
 
   return (
