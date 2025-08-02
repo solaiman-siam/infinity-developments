@@ -6,7 +6,6 @@ import NearbyLiving from "@/components/project-details/NearbyLiving";
 import ProjectLocation from "@/components/project-details/ProjectLocation";
 import VisualSymphony from "@/components/project-details/VisualSymphony";
 
-
 const ProjectDetails = async ({
   params,
 }: {
@@ -20,10 +19,10 @@ const ProjectDetails = async ({
       <HeroImageSlider />
       <AboutProject />
       <VisualSymphony />
-      <FloorPlan/>
-      <Living/>
-      <ProjectLocation/>
-      <NearbyLiving/>
+      <FloorPlan />
+      <Living />
+      <ProjectLocation />
+      <NearbyLiving />
     </div>
   );
 };

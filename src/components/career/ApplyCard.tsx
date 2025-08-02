@@ -1,19 +1,21 @@
-import Container from "../shared/Container";
 import ApplyCareerModal from "./ApplyCareerModal";
 
-const ApplyCard = ({designationName} : {designationName: string}) => {
+const ApplyCard = ({ designationName }: { designationName: string }) => {
   return (
-    <div className="bg-[#F1F0E7]  py-6">
-      <Container>
-        <div className="flex px-40 justify-between items-center">
-          <h3 className="text-lg font-medium text-primaryBlack">
-            {designationName}
-          </h3>
+    <div className="  py-6">
+      <div className="flex  ">
+        <div className="bg-white flex border-black/10 justify-between items-center w-full p-6 rounded-md border">
+          <div className="flex flex-col gap-1">
+            <h3 className="text-lg font-medium text-primaryBlack">
+              {designationName}
+            </h3>
+            <h4 className="text-black/50">Full Time</h4>
+          </div>
           <div>
-            <ApplyCareerModal/>
+            <ApplyCareerModal />
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

@@ -47,7 +47,7 @@ const FounderMessage = () => {
             </div>
             <div className="w-1/2">
                 <div className="h-[720px]">
-                    <Image className="w-full  h-full rounded-2xl" src={localImages.FounderImage} alt="president-image"/>
+                    <Image className="w-full object-cover h-full rounded-2xl" src={localImages.FounderImage} alt="president-image"/>
                 </div>
                 <h2 className="text-4xl font-medium text-primaryBlack/70 pt-5">Samuel Saba</h2>
                 <h4 className="text-primaryBlack/80 pt-2">Chairman</h4>
