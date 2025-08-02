@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins, ABeeZee } from "next/font/google";
-import 'antd/dist/reset.css';
 import "./globals.css";
 import { ConfigProvider } from "antd";
 // import ReactLenis from "lenis/react";

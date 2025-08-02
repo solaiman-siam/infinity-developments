@@ -1,4 +1,3 @@
-import React from "react";
 
 import { MapPin, MoveDown } from "lucide-react";
 import Image from "next/image";
@@ -7,9 +6,7 @@ import Link from "next/link";
 import { IProject } from "@/app/types/type";
 
 const OurProject = async () => {
-  const res = await fetch(`${process.env.NEXT_API_URL}/api/project/list`, {
-    next: { revalidate: 30 },
-  });
+ const res = await fetch(`${process.env.NEXT_API_URL}/api/project/list`, {next: { revalidate: 30}});
 
   const projectList = await res.json();
   console.log(projectList);
